@@ -37,11 +37,12 @@ var utag_data={
 </script>
 
 	<script type="text/javascript">
+function click(){
 utag.link({
     "tealium_event"  : "social_share",
     "social_network" : "LinkedIn",
     "shared_link"    : "https://tealium.com/"
-});
+});}
 </script>
 
 <!-- Loading script asynchronously -->
@@ -52,8 +53,12 @@ utag.link({
     a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
     })();
 </script>
-
-    
+	<script type="text/javascript">
+$('#shoes').on('click',function(e){ 
+    // Only trigger UID 155 on this event
+    utag.view({event_name:"download pdf",page_name:utag.data.page_name}, null, [155]) 
+});
+   </script> 
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
