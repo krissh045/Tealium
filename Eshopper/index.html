@@ -37,14 +37,7 @@ var utag_data={
 };
 </script>
 
-	<script type="text/javascript">
-function click(){
-utag.link({
-    "tealium_event"  : "social_share",
-    "social_network" : "LinkedIn",
-    "shared_link"    : "https://tealium.com/"
-});}
-</script>
+
 
 <!-- Loading script asynchronously -->
 <script type="text/javascript">
@@ -341,12 +334,12 @@ $('#shoes').on('click',function(e){
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#">Clothing</a></h4>
+									<h4 class="panel-title"><a href="#" id="clothing">Clothing</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
 								<div class="panel-heading">
-									<h4 class="panel-title"><a href="#" id='bags' onclick="utag.link({ga_event_action:'some_action',ga_event_category:'some_category',ga_event_label:'some_label'});">Bags</a></h4>
+									<h4 class="panel-title"><a href="#" id='bags' onclick="utag.link({'event_name:'bags_click','social_network':'LinkedIn','shared_link':'https://tealium.com/'});">Bags</a></h4>
 								</div>
 							</div>
 							<div class="panel panel-default">
